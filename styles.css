@@ -162,6 +162,10 @@ nav.black ul li:hover ul li{
 	transition: .3s;
 }
 
+	nav ul{
+  	background-color: rgba(0,0,0,0.8);
+}
+
 	nav ul li a{
 
 		color: white;
