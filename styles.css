@@ -1,0 +1,213 @@
+body{
+	background: linear-gradient(to right, rgba(186,85,211,.6), rgba(139,0,139,1));
+	font-family: serif;
+	font-style: bold;
+}
+
+body .container{
+	margin: 80px;
+	
+	background: url('img.jpg') ;
+	border-radius: 4px;
+}
+
+
+nav{
+	width: 100%;
+	background: rgba(0,0,0, 0.8);
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: .5s;
+	height: 80px;
+}
+
+
+nav ul{
+	
+	margin:25px;
+	padding: 0px;
+	list-style: none;
+}
+
+nav ul li.navgroup1{
+	float: left;
+	color: white;
+}
+
+nav ul li{
+	transition: .4s;
+	float: right;
+	width: 150px;
+	height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+
+
+nav ul li:hover{
+	transition: 0.4s;
+	background: #e91e63;
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+
+/*REMOVE THE DROPDOWN*/
+nav ul li ul li{
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	background: rgba(0,0,0,.8);
+}
+
+nav ul li:hover ul li{
+	display: block;
+}
+
+nav ul li ul{
+	margin: 0px;
+}
+
+
+
+
+/*/BLACK NAVBAR*/
+nav.black {
+	height: auto;
+	width: 100%;
+	background: rgba(0,0,0, 0.4);
+	box-sizing: border-box;
+	transition: .5s;
+
+}
+
+nav.black ul{
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+}
+
+nav.black ul li{
+	transition: .4s;
+	float: right;
+	width: 150px;
+	height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 40px;
+	font-size: 15px;
+}
+nav.black ul li.navgroup1{
+	color: white;
+	float: left;
+}
+
+nav.black ul li:hover{
+	transition: 0.4s;
+	background: #e91e63;
+}
+
+/*REMOVE THE DROPDOWN*/
+nav.black ul li ul li{
+	padding: 0px;
+	margin: 0px;
+	display: none;
+}
+
+nav.black ul li:hover ul li{
+	display: block;
+}
+
+
+
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	
+	text-align: right;
+	/*INCLUDE THE PADDING AND BORDER WHEN CALC BOX WIDTH AND HEIGHT*/
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+@media (max-width: 768px){
+
+	body .container{
+	margin: 20px;
+	
+	border-radius: 4px;
+	}
+
+	nav{
+	width: 100%;
+	background: rgba(0,0,0, 0.8);
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: .3s;
+}
+
+	nav ul li a{
+
+		color: white;
+	}
+
+	.toggle{
+		display: block;
+	}
+	nav ul{
+
+		width: 100%;
+		display: none;
+	}
+	
+	nav ul li{
+
+		transition: 0.4s;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.active{
+		display: block;
+	}
+
+	nav ul li ul{
+		margin: 0px;
+	}
+	nav ul li ul li {
+		float: right;
+		background-color: rgba(0,0,0,0.8);
+	}
+
+/*	BLACK*/
+	nav.black ul li ul{
+		margin: 0px;
+	}
+	nav.black ul li ul li {
+		float: right;
+		background-color: rgba(0,0,0,0.8);
+	}
+	nav.black ul li{
+		transition: .4s;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+
+}
